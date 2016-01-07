@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import "compass";
+@import "base";
+
+.switch {
+  &.on {
+    .status {
+      float: right;
+      border: 1px solid $color;
+    }
+    background-color: $color;
+  }
+  .status {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -1px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #aaa;
+  }
+  display: inline-block;
+  width: 40px;
+  height: 18px;
+  border-radius: 9px;
+  background-color: #aaa;
+
+}
