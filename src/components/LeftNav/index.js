@@ -8,13 +8,6 @@ var LeftNav = React.createClass({
 		return {}
 	},
 
-	newGeneralize  () {
-		if (typeof this.props.newGeneralize === 'function') {
-			this.props.newGeneralize()
-		} else if (typeof this.props.newGeneralize === 'string') {
-			location = this.props.newGeneralize
-		}
-	},
 
 	render() {
 		var menu = this.props.menuList
@@ -32,11 +25,6 @@ var LeftNav = React.createClass({
 			})
 		return (
 			<nav className="left-nav">
-				<div className="new">
-					<button className="btn" onClick={this.newGeneralize}>
-						<img src={addIcon}/>新建投放
-					</button>
-				</div>
 				{this.props.children}
 				<div className="list-group">
 					{menu}
